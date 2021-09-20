@@ -46,3 +46,23 @@ crome 확장 프로그램
 - ColorZilla > 색상을 가져오는 프로그램
 
 input은 따로 class를 적용하지 않음 
+
+css // not -> 무언가를 적용안하고 싶을 때
+
+login-form input:not([type="submit"]){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out;
+}
+
+위 예시처럼 not을 쓰고 싶을 땐 #login-form input에도 똑같이 중복적용이 됨 
+not이 들어간 쪽에만 사용해야 하고 다른 css보다 위쪽에 위치하고 있어야 함
+
+ color: inherit;
+ -> inherit - class 부모로부터 색상을 상속받는 것
+
+ method
+
+ - post = 백엔드 서버에 서버를 전송하는 방식
+ - get = 보안에 취약하므로 username, password를 전송하면 안됨
+ url에 포함되어도 상관없는 정보들이라면 첨부가능
+ -  

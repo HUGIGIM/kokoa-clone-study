@@ -4,6 +4,7 @@
     padding: 15px 0px;
     text-align: center;
     font-size: 15px;
+    margin-bottom: 5px;
 }
 
 #friends-display-link i  {
@@ -11,6 +12,8 @@
     padding-right: 5px;
 }
 
-
+.friends-screen {
+    padding: 0px var(--horizontal-space);
+}
 
 

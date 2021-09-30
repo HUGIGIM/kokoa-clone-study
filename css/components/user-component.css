@@ -23,7 +23,7 @@
 .user-component__subtitle{
     margin-top:  5px; 
     font-size: 13px;
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--gray);
 }
 
 .user-component__avatar--xl{
@@ -43,7 +43,7 @@
 
 .friends-screen__channel{
     margin-top: 25px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: var(--gray);
     padding-top: 15px;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .user-component__column:last-child{
-    color:rgba(0, 0, 0, 0.3);
+    color: var(--gray);
     display: flex;
     flex-direction: column;
     align-items: flex-end;

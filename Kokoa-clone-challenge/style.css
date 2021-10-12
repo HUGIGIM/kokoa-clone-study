@@ -1,0 +1,102 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color:  black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section{
+    width: 400px;
+    height: 400px;
+    background-color: teal;   
+}
+
+.play-bg-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lollin-circle {
+    margin: 120px 0 150px;
+    animation: rotate 1s ease-in-out infinite;
+    display: flex;
+}
+
+.lollin-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 10px;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+    100%{
+        transform: rotateZ(180deg);
+    }
+
+}
+
+
+.wave-box{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -60px;
+   
+}
+.wave-box div{
+    width: 10px;
+    height: 30px;
+    background-color: white;
+    margin: 0  0 60px 4px;
+}
+
+@keyframes sizeup{
+    0%{
+        transform: scaleY(1);
+    }
+    15%{
+        transform: scaleY(2.5);
+    }
+    50%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+    
+}
+
+
+.wave-box-first{
+    animation: sizeup 1s ease infinite;
+    animation-delay: 0s, 1500ms;
+}
+.wave-box-second{
+    animation: sizeup 1s ease infinite;
+    animation-delay: 0.15s, 1500ms;
+}
+.wave-box-third{
+    animation: sizeup 1s ease infinite;
+    animation-delay: 0.25s, 1500ms;
+}
+.wave-box-four{
+    animation: sizeup 1s ease infinite;
+    animation-delay: 0.35s, 1500ms;
+}
+.wave-box-five{
+    animation: sizeup 1s ease infinite;
+    animation-delay: 0.45s, 1500ms;
+}
